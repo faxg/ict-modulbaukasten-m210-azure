@@ -1,0 +1,107 @@
+---
+title: "Übersicht - LBV für M210 auf Azure"
+metaTitle: "LBV Modul 210"
+metaDescription: "Leistungsbeurteilungsvorgaben (LBV) für Modul M210" 
+---
+
+# Leistungsbeurteilungsvorgaben (LBV)
+
+- Version: LBV 210-1
+- Url: https://www.modulbaukasten.ch/module/210/1/de-DE?title=Public-Cloud-f%C3%BCr-Anwendungen-nutzen&lbv=0
+
+
+## Theorieteil
+__(Element 1 - Gewichtung 20% - Richtzeit 0.33)__
+- Kann zwischen Public, Private und Hybrid Cloud unterscheiden und kann die Einsatzmöglichkeiten dieser Formen erkennen.
+- Kann den Preis der Cloud Resourcen in einem geplanten Projekt mit dem Pricing-Calculator errechnen
+- Kennt die Verantwortlichkeiten von Cloud-Services (ob User oder Cloud-Anbieter)
+- Kann Benutzer-, Rollen- und Zugriffsberechtigungen (Identity and Access Management) in der Cloud anwenden
+
+### Public, Private and Hybrid Cloud
+Aufgabe: Public, Private und Hybrid Cloud für ein beschriebenes Projekt wählen.
+- Grundlegendes zu Cloud Modellen: https://learn.microsoft.com/de-de/training/modules/describe-cloud-compute/5-define-cloud-models
+- Azure Architecture Center: https://learn.microsoft.com/de-de/azure/architecture/
+  
+
+### Pricing
+Aufgabe: Pricing eines Projekts bestimmen.
+- Azure Pricing Calculator: https://azure.microsoft.com/de-de/pricing/calculator/
+- Well-Architected Framework - Kostenoptimierung: https://learn.microsoft.com/de-de/azure/architecture/framework/cost/overview
+- Prüfliste: Kostenorientierter Entwurf: https://learn.microsoft.com/de-de/azure/architecture/framework/cost/design-checklist
+  
+
+### Shared Responsibility
+Aufgabe: Shared Responsibility an Beispielen erklären.
+
+- Gemeinsame Verantwortung in der Cloud: https://learn.microsoft.com/de-de/azure/security/fundamentals/shared-responsibility
+
+
+
+### Identity and Access Management
+Aufgabe: Sicherheitskonzept mit Benutzer-, Rollen- und Zugriffsberechtigungen definieren.
+
+- Rollenbasierte Zugriffssteuerung in Azure (RBAC): https://learn.microsoft.com/de-de/azure/role-based-access-control/overview
+
+
+
+
+## Praxisarbeit 
+__(Element 2 - Gewichtung 80% - Richtzeit: 2.16)__
+
+- Kann eine VM in der Cloud nach Vorgaben erstellen, welche von aussen aufgerufen werden kann
+- Kann eine einfache Container Architektur erstellen
+- Kann FaaS nach Vorgaben erstellen
+- Kann mithilfe von IaC eine Cloud Infrastruktur nach Vorgaben erstellen
+- Kann CI/CD Pipelines nach Vorgaben erstellen und mit dieser Applikationen automatisiert ausrollen
+
+
+### VM in der Cloud
+Aufgabe: VM in der Cloud erstellen mit Zugriff von aussen
+- Quickstart: Erstellen eines virtuellen Linux-Computers 
+  - Azure-Portal: https://learn.microsoft.com/de-de/azure/virtual-machines/linux/quick-create-portal
+  - Azure CLI: https://learn.microsoft.com/de-de/azure/virtual-machines/linux/quick-create-cli
+  - Terraform (IaC): https://learn.microsoft.com/de-de/azure/virtual-machines/linux/quick-create-terraform
+  - Bicep (IaC): 
+
+- Tutorial
+  - Erstellen und Verwalten virtueller Linux-Computer mit der Azure-Befehlszeilenschnittstelle
+  https://learn.microsoft.com/de-de/azure/virtual-machines/linux/tutorial-manage-vm
+
+### Container
+Aufgabe: Container-Image und Container erstellen und verwalten
+- Azure Container Apps
+    - Schnellstart: Bereitstellen über das Azure Portal https://learn.microsoft.com/de-de/azure/container-apps/quickstart-portal
+    - Schnellstart: Bereitstellen Ihrer ersten Container-App (Azure CLI): https://learn.microsoft.com/de-de/azure/container-apps/get-started?tabs=bash
+
+
+### Datenbank in der Cloud
+- SQL Datenbank: PostgreSQL on Azure
+- NoSQL Datenbank: CosmosDB mit MongoDB API
+- 
+
+### FAAS
+Aufgabe: Mittels FaaS auf Datenbank in der Cloud zugreifen.
+- Azure Functions mit SQL Datenbank
+  - Java
+  - Python
+  - JavaScript
+  - C#
+
+### IaC
+Aufgabe: Cloud Infrastruktur mittels IaC bereitstellen.
+- Übersicht: IaC Optionen auf Azure
+- ARM Templates: 
+- Bicep Templates:
+- Terraform: 
+  
+
+
+
+### CI/CD
+Aufgabe: Erstellen einer einfachen CI/CD Pipeline.
+
+- Übersicht
+- GitHub Actions
+- Azure DevOps
+
+
